@@ -205,7 +205,8 @@ def relatorios(livros):
         print("Nenhum livro cadastrado.")
         return
 
-    print("\n===== RELATÓRIOS =====")
+    print("\n📊 RELATÓRIOS DA BIBLIOTECA")
+    print("════════════════════════════")
 
     total_livros = len(livros)
 
@@ -219,20 +220,10 @@ def relatorios(livros):
         total_livros
     )
 
-    print(
-        f"\nTotal de livros: "
-        f"{total_livros}"
-    )
+    print(f"📚 Total de livros: {total_livros}")
 
-    print(
-        f"Total de exemplares: "
-        f"{total_exemplares}"
-    )
-
-    print(
-        f"Média de exemplares: "
-        f"{media:.2f}"
-    )
+    print(f"📦 Total de exemplares: {total_exemplares}")
+    print(f"📈 Média de exemplares: {media:.2f}")
 
     mais_antigo = min(
         livros,

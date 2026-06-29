@@ -8,12 +8,21 @@ from controller import (
     relatorios
 )
 
+def exibir_banner():
+
+    print("""
+╔══════════════════════════════════════════════╗
+║      📚 SISTEMA DE BIBLIOTECA 📚            ║
+║      Fundamentos de Computação - UFMA       ║
+╚══════════════════════════════════════════════╝
+""")
+
 
 def exibir_menu():
 
     print("\n")
     print("╔══════════════════════════════════════╗")
-    print("║      📚 SISTEMA DE BIBLIOTECA 📚      ║")
+    print("║              MENU PRINCIPAL         ║")
     print("╠══════════════════════════════════════╣")
     print("║ 1 ➜ Cadastrar Livro                 ║")
     print("║ 2 ➜ Consultar Livro                 ║")
@@ -63,6 +72,7 @@ def listar_todos(livros):
 def main():
 
     livros = carregar_dados()
+    exibir_banner()
 
     while True:
 
