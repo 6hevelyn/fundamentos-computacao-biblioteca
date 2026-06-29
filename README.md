@@ -44,13 +44,6 @@ Sistema_Biblioteca/
 │   ├── controller.py
 │   └── persistence.py
 │
-├── docs/
-│   ├── Relatorio_Tecnico.pdf
-│   └── imagens/
-│       ├── menu.png
-│       ├── cadastro.png
-│       └── relatorios.png
-│
 ├── README.md
 ├── requirements.txt
 └── .gitignore
