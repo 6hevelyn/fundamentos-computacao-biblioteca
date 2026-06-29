@@ -31,23 +31,70 @@ O sistema permite o gerenciamento de livros através das operações CRUD (Creat
 * Programação Estruturada
 * Arquitetura Modular
 
-## Estrutura do Projeto
+## 📂 Estrutura do Projeto
+
+O projeto está organizado da seguinte forma:
 
 ```text
 Sistema_Biblioteca/
+
 │
-├── data/
-│   └── livros.csv
+├── main.py                     # Ponto de entrada da aplicação
+│                               # Menu principal do sistema
 │
-├── src/
-│   ├── main.py
-│   ├── controller.py
-│   └── persistence.py
+├── controller.py               # Regras de negócio
+│                               # CRUD e geração de relatórios
 │
-├── README.md
-├── requirements.txt
-└── .gitignore
+├── persistence.py              # Manipulação dos dados
+│                               # Leitura e gravação do arquivo CSV
+│
+├── livros.csv                  # Banco de dados do sistema
+│                               # Armazena todos os livros cadastrados
+│
+├── README.md                   # Documentação do sistema
+│
+└── .gitignore                  # Arquivos ignorados pelo GitHub
 ```
+
+## 🦉 Descrição dos Comandos Principais
+
+O sistema funciona através de um menu numérico interativo no terminal. Abaixo estão as funcionalidades disponibilizadas em cada opção:
+
+### 1. Cadastrar Livro
+Inicia o formulário de cadastro solicitando ID, Título, Autor, Categoria, Ano e Quantidade.
+
+**Validações:**
+- ID único
+- Título obrigatório
+- Autor obrigatório
+- Ano maior que zero
+- Quantidade não negativa
+
+### 2. Consultar Livro
+Permite localizar livros através de:
+- ID
+- Título
+- Categoria
+
+### 3. Atualizar Livro
+Permite alterar os dados de um livro existente, mantendo o cadastro sempre atualizado.
+
+### 4. Excluir Livro
+Remove permanentemente um livro do sistema após confirmação do usuário.
+
+### 5. Relatórios
+Disponibiliza análises do acervo:
+
+- Total de livros cadastrados
+- Total de exemplares
+- Média de exemplares por livro
+- Quantidade por categoria
+- Livro mais antigo
+- Ranking dos livros com mais exemplares
+- Listagem em ordem alfabética
+
+### 6. Listar Todos
+Exibe todos os livros cadastrados juntamente com suas informações completas.
 
 ## Como Executar
 
