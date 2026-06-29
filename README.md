@@ -49,5 +49,7 @@ python src/main.py
 
 ## Autores
 
-* Nome dos integrantes
+* Hevelyn Fenanda
+* Paula Angela
+* Vitória dos Reis
 * Universidade Federal do Maranhão (UFMA)
