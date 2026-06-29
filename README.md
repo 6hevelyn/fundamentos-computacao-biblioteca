@@ -105,4 +105,4 @@ python main.py
 * Hevelyn Fenanda
 * Paula Angela
 * Vitória dos Reis
-* Universidade Federal do Maranhão (UFMA)
+* Universidade Federal do Maranhão (UFMA) 
