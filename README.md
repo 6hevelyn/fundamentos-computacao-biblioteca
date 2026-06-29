@@ -98,7 +98,7 @@ Exibe todos os livros cadastrados juntamente com suas informações completas.
 
 ## Como Executar
 
-python src/main.py
+python main.py
 
 ## Autores
 
