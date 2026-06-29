@@ -33,15 +33,16 @@ O sistema permite o gerenciamento de livros através das operações CRUD (Creat
 
 ## Estrutura do Projeto
 
+```text
 Sistema_Biblioteca/
 │
 ├── data/
 │   └── livros.csv
 │
 ├── src/
+│   ├── main.py
 │   ├── controller.py
-│   ├── persistence.py
-│   └── main.py
+│   └── persistence.py
 │
 ├── docs/
 │   ├── Relatorio_Tecnico.pdf
@@ -53,6 +54,7 @@ Sistema_Biblioteca/
 ├── README.md
 ├── requirements.txt
 └── .gitignore
+```
 
 ## Como Executar
 
