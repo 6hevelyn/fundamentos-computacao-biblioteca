@@ -175,30 +175,31 @@ def excluir_livro(livros):
 
     try:
 
-        id_livro = int(
-            input("ID do livro: ")
-        )
+        id_livro = int(input("Digite o ID: "))
 
-        livro = buscar_por_id(
-            livros,
-            id_livro
-        )
+        livro = buscar_por_id(livros, id_livro)
 
         if livro:
+
+            confirmacao = input(
+                "Deseja realmente excluir este livro? (S/N): "
+            ).upper()
+
+            if confirmacao != "S":
+                print("Operação cancelada.")
+                return
 
             livros.remove(livro)
 
             salvar_dados(livros)
 
-            print("Livro removido.")
+            print("Livro removido com sucesso.")
 
         else:
             print("Livro não encontrado.")
 
     except ValueError:
         print("ID inválido.")
-
-
 def relatorios(livros):
 
     if len(livros) == 0:
@@ -229,7 +230,7 @@ def relatorios(livros):
         livros,
         key=lambda x: x["ano"]
     )
-
+ 
     print(
         f"\nLivro mais antigo:"
         f" {mais_antigo['titulo']}"
